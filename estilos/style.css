@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    color: white;
+}
+html, body {
+    height: 100vh;
+    background-image: linear-gradient(45deg, black, rgba(0, 0, 0, 0.336));
+}
+main {
+    width: 300px;
+    height: 400px;
+    background-color: black;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+main > h1 {
+    text-align: center; 
+    padding-top: 15px;
+}
+#container {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+#bloco-button-menos {
+    width: 30%;
+    height: 50%;
+}
+#button-menos {
+    background-color: rgb(68, 66, 66);
+    padding: 15px 20px 15px 20px;
+    border: none;
+    font-size: 2em;
+    font-weight: bolder;
+    margin-left: 20px;
+    cursor: pointer;
+}
+#bloco-resp {
+    width: 60%;
+}
+#resp {
+    text-align: center;
+    font-size: 6em;
+}
+#bloco-button-mais {
+    width: 30%;
+    height: 50%;
+}
+#button-mais {
+    background-color: rgb(68, 66, 66);
+    padding: 15px;
+    border: none;
+    font-size: 2em;
+    font-weight: bolder;
+    margin-right: 20px;
+    cursor: pointer;
+    
+}
+#resetar {
+    background-color: rgb(62, 62, 194);
+    display: block;
+    margin: auto;
+    padding: 30px;
+    border: none;
+    font-size: 1.7em;
+    text-align: center;
+    width: 80%;
+    margin-top: 50px;
+    cursor: pointer;
+}
+#resetar:hover {
+    background-color: rgb(26, 26, 167);
+}
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <main>
+        <h1>Contador</h1>
+        <div id="container">
+            <div id="bloco-button-menos">
+                <button id="button-menos" onclick="remover ()">-</button>
+            </div>
+            <div id="bloco-resp">
+                <p id="resp"> 0 </p>
+            </div>
+            <div id="bloco-button-mais">
+                <button id="button-mais" onclick="adicionar()">+</button>
+            </div>
+        </div>
+        <input id="resetar" type="submit" value="Resetar" onclick="reset ()">
+    </main>
+
+
+    <script src="code/script.js"></script>
+</body>
+</html>
