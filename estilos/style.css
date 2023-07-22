@@ -15,7 +15,8 @@ main {
     width: 300px;
     height: 400px;
     background-color: black;
-
+    border-radius: 10px;
+    box-shadow: 3px 2px 6px rgba(0, 0, 0, 0.575);
     position: absolute;
     left: 50%;
     top: 50%;
