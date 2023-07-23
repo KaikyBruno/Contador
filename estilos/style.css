@@ -12,15 +12,18 @@ html, body {
     background-image: linear-gradient(45deg, black, rgba(0, 0, 0, 0.336));
 }
 main {
+    position: relative;
     width: 300px;
-    height: 400px;
+    height: auto;
     background-color: black;
     border-radius: 10px;
     box-shadow: 3px 2px 6px rgba(0, 0, 0, 0.575);
-    position: absolute;
+    padding-bottom: 10px;
+    
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    
 }
 main > h1 {
     text-align: center; 
@@ -77,9 +80,80 @@ main > h1 {
     text-align: center;
     width: 80%;
     margin-top: 50px;
+    border-radius: 10px;
     cursor: pointer;
 }
 #resetar:hover {
     background-color: rgb(26, 26, 167);
 }
-
+#personalizar {
+    background-color: rgb(163, 28, 180);
+    display: block;
+    margin: auto;
+    padding: 30px;
+    border: none;
+    font-size: 1.7em;
+    text-align: center;
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#personalizar:hover {
+    background-color: rgb(74, 2, 83)
+}
+#personalizar-bloco {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding-bottom: 10px;
+    display: none;
+}
+#voltar {
+    padding: 20px;
+    font-size: 2em;
+    cursor: pointer;
+}
+#voltar:hover {
+    color: red;
+    transition: 0.4s ease;
+}
+.contagem-bloco {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.contagem {
+    width: 100px;
+    padding: 10px;
+    color: black;
+    margin-left: 5px;
+    margin-top: 5px;
+    font-size: 1.3em;
+}
+.contagem-bloco > p {
+    font-size: 1.4em;
+    color: rgb(235, 87, 255);
+}
+#definir {
+    background-color: rgb(163, 28, 180);
+    display: block;
+    margin: auto;
+    padding: 15px;
+    border: none;
+    font-size: 1.4em;
+    text-align: center;
+    width: 40%;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom:10px
+}
+#definir:hover {
+    background-color: rgb(74, 2, 83);
+}

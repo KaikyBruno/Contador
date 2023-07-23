@@ -6,6 +6,8 @@
     <title>Contador</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="shortcut icon" href="favicon/icone-favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <main>
@@ -22,7 +24,26 @@
             </div>
         </div>
         <input id="resetar" type="submit" value="Resetar" onclick="reset ()">
+        <input id="personalizar" type="submit" value="Personalizar" onclick="personalizar ()">
+        <div id="personalizar-bloco">
+            <i id="voltar" class="fa-solid fa-x" onclick="voltar ()"></i>
+
+            <div class="contagem-bloco">
+                <p>Começar contagem em:</p>
+                <input type="number" name="contagem" id="contagem"      class="contagem" value="0"> 
+            </div>
+            <div class="contagem-bloco">
+                <p>Diminuir em:</p>  
+                <input type="number" name="contagem" id="diminuir" class="contagem" value="1">
+            </div>
+            <div class="contagem-bloco">
+                <P>aumentar em: </P>
+                <input type="number" name="contagem" id="aumentar" class="contagem" value="1">
+            </div>
+            <input type="submit" value="Definir" id="definir" onclick="definir ()"  onclick>
+        </div>
     </main>
+    
 
 
     <script src="code/script.js"></script>
